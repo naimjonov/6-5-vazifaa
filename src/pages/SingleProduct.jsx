@@ -15,9 +15,9 @@ function SingleProduct() {
   return (
     <>
       {product && (
-        <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 flex items-center justify-center p-6">
-          <div className="bg-white backdrop-blur-xl bg-opacity-80 shadow-2xl rounded-3xl overflow-hidden w-full max-w-5xl transition-transform duration-300 hover:scale-[1.01] border border-purple-200">
-            <div className="flex flex-col md:flex-row">
+        <div className="h-screen w-full flex items-center justify-center bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100">
+          <div className="bg-white/80 backdrop-blur-xl shadow-2xl rounded-3xl overflow-hidden w-full max-w-5xl transition-transform duration-300 hover:scale-[1.01] border border-purple-200">
+            <div className="flex flex-col md:flex-row align-center ">
               {/* Image Section */}
               <div className="md:w-1/2 bg-gradient-to-b from-pink-200 to-purple-200 p-8 flex items-center justify-center">
                 <img
@@ -27,7 +27,7 @@ function SingleProduct() {
                 />
               </div>
 
-              {/* Content Section - centered */}
+              {/* Content Section */}
               <div className="md:w-1/2 p-8 flex flex-col justify-center items-center text-center space-y-6">
                 <h1 className="text-3xl md:text-4xl font-bold text-purple-800">{product.title}</h1>
                 <p className="text-gray-700 text-base leading-relaxed">{product.description}</p>
