@@ -8,7 +8,7 @@ function Product({ prod }) {
       to={`/SingleProduct/${prod.id}`}
       className="relative group bg-[#f8f9fa] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-gray-200 max-w-md mx-auto"
     >
-      {/* Image */}
+
       <div className="aspect-[4/3] bg-gray-100 overflow-hidden">
         <img
           src={thumbnail}
@@ -17,7 +17,6 @@ function Product({ prod }) {
         />
       </div>
 
-      {/* Info */}
       <div className="p-6 space-y-3">
         <div className="flex items-center justify-between text-xs text-gray-500">
           <span className="bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full">{category}</span>
@@ -33,7 +32,7 @@ function Product({ prod }) {
         </div>
       </div>
 
-      {/* Subtle hover effect */}
+
       <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition duration-300"></div>
     </Link>
   )
